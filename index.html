@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Articulated 3D-printed dragons, made with care by Carbon 3D Print Labs.">
+  <meta name="theme-color" content="#101010">
+  <title>Carbon 3D Print Labs | Articulated Dragons</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">🚚 Free shipping on orders over $150</div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Carbon 3D Print Labs home">
+      <span class="brand-mark" aria-hidden="true">🐉</span>
+      <span>Carbon 3D Print Labs</span>
+    </a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#shop">Shop</a><a href="#about">About</a><a href="#faq">FAQ</a><a href="mailto:hello@carbon3dprintlabs.com">Contact</a>
+    </nav>
+    <button class="cart-button" aria-label="Open shopping cart">Cart <span class="cart-count">0</span></button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Printed one layer at a time</p>
+        <h1>Dragons, Made<br>Layer by Layer.</h1>
+        <p>Articulated creatures printed with care in our small printer farm.</p>
+        <div class="hero-actions"><a class="button primary" href="#shop">Shop Dragons</a><a class="button secondary" href="#about">Meet the Maker</a></div>
+      </div>
+      <div class="hero-image" role="img" aria-label="Red and black articulated dragon"></div>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-heading"><span></span><h2>Popular Dragons</h2><span></span></div>
+      <div class="product-grid" id="product-grid"></div>
+    </section>
+
+    <section class="benefits" aria-label="Store benefits">
+      <article><span>🖨️</span><div><h3>Printed to order</h3><p>Each dragon is printed just for you and inspected with care.</p></div></article>
+      <article><span>🛡️</span><div><h3>Made in the USA</h3><p>Proudly designed and printed in our small shop.</p></div></article>
+      <article><span>🚚</span><div><h3>Free shipping over $150</h3><p>Every order is packed carefully for its journey.</p></div></article>
+    </section>
+
+    <section class="about" id="about">
+      <div><p class="eyebrow">Small farm. Big imagination.</p><h2>Made by makers who love the details.</h2></div>
+      <p>Carbon 3D Print Labs creates poseable dragons with crisp detail, smooth movement, and color combinations that make every creature feel unique. Minor variations are part of the character of a made-to-order print.</p>
+    </section>
+
+    <section class="faq" id="faq">
+      <p class="eyebrow">Questions</p><h2>Good to know</h2>
+      <details><summary>How long does printing take?</summary><p>Most dragons are ready to ship within 3–5 business days. Large or custom-color orders may take longer.</p></details>
+      <details><summary>Are the dragons suitable for young children?</summary><p>These collectible prints contain articulated sections and pointed details. They are not intended for children under 3.</p></details>
+      <details><summary>Can I request a custom color?</summary><p>Yes. Contact us before ordering and we’ll confirm available filament colors.</p></details>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#top"><span class="brand-mark">🐉</span><span>Carbon 3D Print Labs</span></a><p>Small-batch creatures, printed with care.</p><p>© <span id="year"></span> Carbon 3D Print Labs</p></footer>
+
+  <div class="cart-overlay" hidden></div>
+  <aside class="cart-drawer" aria-hidden="true" aria-label="Shopping cart">
+    <div class="cart-header"><h2>Your Cart</h2><button class="cart-close" aria-label="Close shopping cart">×</button></div>
+    <div class="cart-items"></div>
+    <div class="cart-empty">Your cart is waiting for a dragon.</div>
+    <div class="shipping-progress"><div class="shipping-message"></div><div class="progress-track"><span></span></div></div>
+    <div class="cart-summary"><div><span>Subtotal</span><strong class="subtotal">$0.00</strong></div><button class="button primary checkout-button">Continue to Checkout</button><small>Checkout provider will be connected before launch.</small></div>
+  </aside>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js" defer></script>
+</body>
+</html>
